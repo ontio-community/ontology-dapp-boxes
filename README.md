@@ -19,5 +19,5 @@ npm run build
 
 ## Contributing
 
-The docs are in the ```content/``` directory. And they are markdown files with some YML meta data. You can put your docs here by making a pull request. Thanks.
+The docs are in the ```content/posts/``` directory. And they are markdown files with some YML meta data. You can put your docs here by making a pull request. Thanks.
 
