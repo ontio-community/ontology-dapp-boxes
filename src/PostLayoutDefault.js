@@ -24,6 +24,8 @@ const PostLayoutDefault = (
               content={textRenderer(post.node.body).slice(0, 150) + "…"}
             />
           </Head>
+          <div>{post.node.title}</div> 
+        
           <BodyRenderer>{post.node.body}</BodyRenderer>
         </React.Fragment>
       )}

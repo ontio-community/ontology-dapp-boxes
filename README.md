@@ -8,6 +8,7 @@ Please make sure you have installed the node environment.
 
 1. git clone
 2. npm install
+> If your Python installed is >= Python2.7 Pls try "npm install --python=python2.7"
 3. npm run start
 
 

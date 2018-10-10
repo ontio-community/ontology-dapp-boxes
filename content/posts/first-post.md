@@ -1,6 +1,7 @@
 ---
 title: "This is a first post"
 date: "2017-01-01"
+author: Lee Ming
 ---
 
 # This is a [Markdown](https://en.wikipedia.org/wiki/Markdown#Example) file

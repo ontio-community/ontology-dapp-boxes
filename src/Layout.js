@@ -44,28 +44,71 @@ const Layout = (
 
         .Layout-body {
           flex: 1 0;
+          background:rgba(246,248,249,1);
         }
 
         .Layout-children {
           position: relative;
-          max-width: 1000px;
-          margin: auto;
-          margin-top: -40px;
-          padding: 20px 40px;
-          background: #fff;
+          // max-width: 1000px;
+          margin: 30px auto;
           border-radius: 3px;
           font-size: 18px;
           line-height: 2;
+          width:40%;
         }
 
         .Layout-children a {
-          color: #69BF55;
+          color: #36484E;
+        }
+
+        .Layout-children p {
+          font-size:1rem;
+          font-family:SourceSansPro-Regular;
+          font-weight:400;
+          color:rgba(43,64,69,1);
+        }
+
+        .Layout-children h2 {
+          font-family: SourceSansPro-Bold, sans-serif; 
+          font-size: 28px; color: #2B4045; 
+          line-height: 24px; 
+          font-weigth: 700;
+        }
+
+        .Layout-children h3 {
+          font-family: SourceSansPro-Semibold, san-serif; 
+          font-size: 20px; color: #2B4045; 
+          line-height: 24px; 
+          font-weight: 600;
+        }
+
+        .Layout-children strong {
+          font-family: SourceSansPro-Semibold, sans-serif; 
+          font-weight: 700;
+        }
+
+        .Layout-children pre {
+          overflow:scroll;
+        }
+
+        .Layout-children blockquote {
+          background:rgba(233,237,239,1);
+          border-radius:0.19rem;
+          margin-block-end: 0;
+          margin-block-start: 0;
+          margin-inline-end: 0;
+          margin-inline-start: 0;
+          padding: 12px;
+        }
+
+        blockquote  p {
+          margin:0 !important;
         }
 
         .Layout-children p,
         .Layout-children ul,
         .Layout-children ol {
-          margin-bottom: 40px;
+          margin-bottom: 20px;
         }
 
         .Layout hr {
@@ -75,6 +118,26 @@ const Layout = (
           border-bottom: 1px solid rgba(255, 255, 255, 0.3);
           margin: 40px;
         }
+        .Layout-children-title {
+          width:39rem;
+          height:6.06rem;
+          font-size:2.63rem;
+          font-family:SourceSansPro-ExtraLight;
+          font-weight:200;
+          color:rgba(43,64,69,1);
+          line-height:3.25rem
+        }
+        .Layout-children-dateAuthor {
+          // width:14.31rem;
+          height:1.25rem;
+          font-size:1rem;
+          font-family:SourceSansPro-Bold;
+          font-weight:bold;
+          color:rgba(106,121,124,1);
+          line-height:1.25rem;
+          margin-top:15px;
+        }
+        
       `
       }}
     />

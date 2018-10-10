@@ -11,6 +11,7 @@ import PageBlog from "./src/PageBlog";
 import PageBlogPost from "./src/PageBlogPost";
 import PageRepositories from "./src/PageRepositories";
 import PageError from "./src/PageError";
+import PageBox from './src/PageBox'
 
 const routes = () => (
   <Router history={browserHistory}>
@@ -18,11 +19,13 @@ const routes = () => (
     <Route path="/blog/" component={PageBlog} />
     <Route path="/blog/after/:after" component={PageBlog} />
     <Route path="/blog/*" component={PageBlogPost} />
+    <Route path="/boxes/" component={PageBox} />   
     <Route path="/repositories/" component={PageRepositories} />
     <Route path="/repositories/page/:page" component={PageRepositories} />
     {/* for static hosting, we often need an explicit 404.html */}
     <Route path="404.html" component={PageError} />
     <Route path="*" component={Page} />
+    
   </Router>
 );
 

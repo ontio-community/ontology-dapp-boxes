@@ -22,6 +22,8 @@ const Header = (
         __html: `
         .Header {
           position: relative;
+          background:#0D181A;
+          color:#ffffff;
         }
 
         .Header-nav {
@@ -31,7 +33,7 @@ const Header = (
           margin: 0 auto;
           padding: 0;
           line-height: 3rem;
-          background: #fff;
+          background: #0D181A;
           border-top: 4px solid  #444444;
         }
 
@@ -63,10 +65,9 @@ const Header = (
           display: flex;
           flex-direction: column;
           justify-content: center;
-          min-height: 400px;
-          padding: 3rem;
           color: #fff;
-          background: #323232;
+          height:9rem;
+          background: rgba(13,24,26,1);;
         }
 
         .Header-hero-background {
@@ -101,8 +102,13 @@ const Header = (
 
         .Header-light {
           position: relative;
-          padding: 3rem;
           text-align: center;
+          width: 39rem;
+          margin-top: 6rem;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: left;
+          font-size:3rem;
         }
 
         .Header-light-title {
@@ -119,8 +125,8 @@ const Header = (
           <Link className="Header-link" to="/">
             Home
           </Link>
-          <Link className="Header-link" to="/blog/">
-            Docs
+            <Link className="Header-link" to="/boxes/">
+            Boxes
           </Link>
         </div>
         <div className="Header-navPart2">
@@ -132,20 +138,18 @@ const Header = (
         </div>
       </nav>
       {light ? (
-        <div className="Header-light">
-          {title && <h1 className="Header-light-title">{title}</h1>}
-        </div>
+        // <div className="Header-light">
+        //   {title && <h1 className="Header-light-title">{title}</h1>}
+        // </div>
+        <div></div>
       ) : (
         <div className="Header-hero">
-          {image && (
-            <div
-              className="Header-hero-background"
-              style={{ backgroundImage: `url(${image})` }}
-            />
-          )}
           {title && <h1 className="Header-hero-title">{title}</h1>}
         </div>
       )}
+      {/* <div className="Header-light">
+        {title && <h1 className="Header-light-title">{title}</h1>}
+      </div> */}
     </header>
   </React.Fragment>
 );

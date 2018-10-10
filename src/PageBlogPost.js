@@ -17,8 +17,7 @@ const PageBlogPost = ({ hasError, isLoading, post }) => {
     return <PageError error={post.error} />;
   }
 
-  const PostLayout =
-    (post.node && layouts[post.node.layout]) || layouts.default;
+  const PostLayout = layouts.light;
   return <PostLayout isLoading={isLoading} post={post} />;
 };
 

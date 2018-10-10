@@ -1,11 +1,17 @@
 ---
 title: "I wrote my fifth post and you won't believe what happen next"
 date: "2017-01-05"
-layout: light
+author: Mickey Wang
 ---
 
-This post is using the `light` layout, defined from markdown front-matter. How
+**This** post is using the `light` layout, defined from markdown front-matter. How
 cool?
+
+> Note text here
+
+## h2 text here
+
+### h3 text here
 
 Another post that have a [link to the first one](../first-post/).
 

@@ -25,17 +25,55 @@ const LatestPosts = (
           max-width: 600px;
           margin: auto;
           padding: 0;
+          list-style:none;
         }
 
         .LatestPosts-list-item {
-
+          width: 39rem;
+          background: rgba(255,255,255,1);
+          border-radius: 0.19rem;
+          padding:2rem;
+          margin-bottom:1rem;
+          border-left:3px solid rgba(255,255,255,1);
         }
 
+        .LatestPosts-list-item:hover {
+          border-left:3px solid #32A4BE;
+        }
+
+        .LatestPosts-list-item:hover .LatestPosts-list-item-link {
+          color:#32A4BE !important;
+        }
+
+        .LatestPosts-list-item:hover .LatestPosts-list-item-date{
+          color:#6A797C !important;
+        }
+        
         .LatestPosts-list-item-link {
-          display: block;
-          color: #323232 !important;
-          font-size: 18px;
-          padding: 5px;
+          width:35rem;
+          font-size:1.5rem;
+          font-family:SourceSansPro-Regular;
+          font-weight:400;
+          line-height:1.94rem;
+          text-decoration:none;
+          display:block;
+        }
+
+        .LatestPosts-list-item-line {
+          width:100%;
+          height:1px;
+          background:#E9EDEF;
+          margin-top:1rem;
+        }
+        .LatestPosts-list-item-date {
+          width:35rem;
+          height:1.25rem;
+          font-size:1rem;
+          font-family:SourceSansPro-Bold;
+          font-weight:bold;
+          color:#AAB3B4;
+          line-height:1.25rem;
+          margin-top:10px;
         }
 
         .LatestPosts-nav {
@@ -51,7 +89,6 @@ const LatestPosts = (
       }}
     />
     <div className="LatestPosts">
-      <h2>Latests Post</h2>
       {error && <div className="error">{error.statusText}</div>}
       {node &&
         node.list && (
@@ -65,6 +102,8 @@ const LatestPosts = (
                   >
                     {post.title || post.id}
                   </Link>
+                  <div class="LatestPosts-list-item-line"></div>
+                  <div class="LatestPosts-list-item-date">At {post.date} By {post.author}</div>
                 </li>
               ))}
             </ul>

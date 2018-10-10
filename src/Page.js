@@ -39,12 +39,12 @@ const Page = ({ hasError, isLoading, page, posts }) =>
         {isLoading && <ActivityIndicator />}
         {!isLoading && (
           <React.Fragment>
-            <div className="Page-content">
+            {/* <div className="Page-content">
               {page &&
                 page.node &&
                 page.node.body && <BodyRenderer>{page.node.body}</BodyRenderer>}
             </div>
-            <hr />
+            <hr /> */}
             <LatestPosts node={posts.node} error={posts.error} />
           </React.Fragment>
         )}
@@ -59,7 +59,7 @@ export default withPhenomicApi(Page, props => ({
   }),
   posts: query({
     path: "content/posts",
-    limit: 4,
+    limit: 20,
     after: props.params.after
   })
 }));

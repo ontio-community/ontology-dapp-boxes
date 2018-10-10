@@ -5,6 +5,7 @@
     "@phenomic/cli": "^1.0.0-beta.3",
     "@phenomic/core": "^1.0.0-beta.3",
     "@phenomic/preset-react-app": "^1.0.0-beta.3",
+    "file-loader": "^2.0.0",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-helmet": "^5.0.0",
@@ -19,7 +20,8 @@
   "phenomic": {
     "presets": [
       "@phenomic/preset-react-app"
-    ]
+    ],
+    "webpackConfig": "./webpack.config.js"
   },
   "title": "Ontology dApp docs",
   "home_page": "https://ont.io",
